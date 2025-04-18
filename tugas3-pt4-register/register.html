@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>registrasi Iwima</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../tugas3-pt4-register/style.css" />
+</head>
+
+<body>
+    <header class="fixed-bar-reg">
+        <h1 class="page-title-reg">Institut Widya Pratama</h1>
+    </header>
+
+    <nav>
+        <ul class="navigation-reg">
+            <li><a href="index.html">Home</a></li>
+            <li>Register</li>
+        </ul>
+    </nav>
+
+    <div class="container-reg">
+
+        <div class="left-panel">
+            <h2>Selamat Datang!<br>First things first...</h2>
+            <p>Isi data registrasi dengan benar, sesuai data kamu!</p>
+            <img src="images/Screenshot (34).png" alt="Illustration" />
+        </div>
+
+        <div class="right-panel">
+
+            <main>
+                <h1>Formulir Registrasi</h1>
+                <form action="">
+                    <label for="namalengkap">Nama Lengkap:</label><br>
+                    <input type="text" id="namalengkap" name="namalengkap" placeholder="hanifatikasari input text.." />
+                    <br><br>
+                    <label for="tempat_lahir">Tempat Lahir:</label><br />
+                    <input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="isikan tempat lahir.." />
+                    <br><br>
+                    <label for="tanggal_lahir">Tanggal Lahir:</label><br />
+                    <input type="date" id="tanggal_lahir" name="tanggal_lahir" placeholder="isikan tanggal lahir.." />
+                    <br><br>
+                    <label for="jenis_kelamin">Jenis Kelamin: </label><br />
+
+                    <div class="gender-group">
+                        <label for="laki-laki">laki-laki
+                            <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki" />
+                        </label>
+
+                        <label for="perempuan">perempuan
+                            <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" />
+                        </label><br>
+                    </div>
+
+                    <label for="asal_sekolah">Asal Sekolah:</label><br>
+                    <input type="text" id="asal_sekolah" name="asal_sekolah"><br><br>
+                    <label for="tahun_lulus">Tahun Lulus:</label><br>
+                    <input type="number" id="tahun_lulus" name="tahun_lulus"><br><br>
+                    <label for="kota">Kota/Kabupaten:</label> <br>
+                    <select name="kota" id="kota">
+                        <option value="Kota Pekalongan">Kota Pekalongan</option>
+                        <option value="Kab Pekalongan">Kab Pekalongan</option>
+                        <option value="Kab Pemalang">Kab Pemalang</option>
+                        <option value="Kab Batang">Kab Batang</option>
+                    </select><br><br>
+                    <label for="alamat">Alamat Tinggal:</label><br>
+                    <textarea id="alamat" name="alamat" rows="4"></textarea><br><br>
+                    <label for="nomor_hp">Nomor HP:</label><br>
+                    <input type="tel" id="nomor_hp" name="nomor_hp"><br><br>
+                    <button type="submit">Daftar</button>
+                </form>
+            </main>
+
+            <footer>
+                <p>&copy; Institut Widya Pratama</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

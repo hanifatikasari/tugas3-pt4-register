@@ -1,0 +1,243 @@
+/*GLOBAL STYLE*/
+html{
+    background-color: #E9F1FA;
+}
+body{
+    margin: 0;
+}
+
+/*text keseluruhan*/
+a{
+    text-decoration: none;
+    color: #1a6c80;
+}
+
+/*HEADER*/
+.fixed-bar{
+   height: 70px;
+}
+
+.fixed-bar-reg{
+    height: 100px;
+}
+
+/*h1*/
+.page-title{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #90cadc;
+    color: #49575b;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+.page-title-reg {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #90cadc;
+    color: #49575b;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px; /* Fokus ke padding atas, jangan pakai semua sisi */
+  
+}
+
+.navigation-reg li {
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+    left: 45%;
+    font-weight: bold;
+    background-color: beige;
+}
+
+
+.container-reg {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+/* LEFT PANEL */
+.left-panel {
+    width: 50%; /* Ukuran lebar panel: 40% dari lebar parent-nya (container-reg) */
+    background-color: #E9F1FA;
+    color: #49575b;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.left-panel h2 {
+    font-size: 26px;
+    margin-bottom: 10px; /* Jarak bawah dari h2 ke elemen setelahnya */
+}
+
+.left-panel p {
+    margin-bottom: 20px;  /* Jarak bawah dari paragraf ke elemen berikutnya */
+}
+
+.left-panel img {
+    max-width: 100%; /* Gambar tidak akan melebihi lebar kontainernya */
+    height: auto;  /* Tinggi gambar otomatis mengikuti proporsi aslinya */
+    background:#E9F1FA;
+    margin-top: 20px;  /* Jarak atas dari gambar ke elemen sebelumnya */
+}
+
+/* RIGHT PANEL */
+.right-panel {
+    width: 50%;
+    background-color: #f8f8f8;
+    padding: 10px 40px 40px 40px;
+    margin: 50px;
+    box-sizing: border-box; /*Bikin width/height lebih terkontrol, Menghindari elemen "bocor" dari layout*/
+    overflow-y: auto;
+    /*overflow-y: auto bikin bagian right-panel (yang isinya form panjang) bisa di-scroll ke bawah kalau tingginya lebih dari layar.
+Tanpa itu, bagian bawah form bisa ketutupan dan user gak bisa isi datanya.*/
+}
+
+/* FORM STYLE */
+form {
+    margin-top: 20px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form label {
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/*gender label reg*/
+.gender-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Jarak antar pilihan */
+    margin-top: 10px;
+}
+
+.gender-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Jarak antara bulatan dan teks */
+    font-weight: normal; /* Biar tulisannya gak terlalu tebal */
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1a6c80;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #155c6b;
+}
+
+/* Footer di kanan */
+.right-panel footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #49575b;
+}
+
+/*nav index*/
+.navigation{
+    text-align: center;
+    color: #5b5449;
+    padding: 0;
+}
+
+.navigation li, 
+.navigation a{
+    display: inline-block;
+    width: 70px;
+    background-color: beige;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    color: white;
+    background-color: #1a6c80;
+}
+
+/*MAIN CONTENT*/
+.trip-text{
+    background-color: #90cadc;
+    padding: 10px;
+    display: flex;
+}
+.trip-text p {
+    color: 49575b;
+    margin: 0px;
+    width: 50%;
+    text-align: center;
+}
+
+/*IMAGE STYLING*/
+.trip-img {
+display: flex;
+}
+
+.trip-img img{
+    width: 50%;
+    height: 600px;
+    
+}
+
+/*TAGLINE*/
+.tagline{
+    background-color: #90cadc;
+    color: #49575b;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    bottom: 25px;
+    margin: 0;
+    height: 30px;
+}
+
+/*footer*/
+.social-media{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    background-color: #90cadc;
+    margin: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-media img{
+    width: 30px;
+    margin: 5px;
+}
+.social-media p{
+    width: 35px;
+    text-align: center;
+}
+
